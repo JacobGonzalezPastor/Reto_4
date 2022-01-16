@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Tecnical Documentation</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand d-falx flex-column align-item-start" id="sidebar">
+
+        <a class="navbar-brand text-light mt-5" href="#">
+            <div class="display-5 font-weight-bold">
+                Angular
+            </div>
+        </a>
+        <ul class="navbar-nav d-flex flex-column mt-5 w-100">
+            <li class="nav-item w-100">
+                <a href="index.html" class="nav-link text-light pl-4">Acerca</a>
+            </li>
+            <li class="nav-item dropdown w-100">
+                <a href="#" class="nav-link dropdown-toggle text-light pl-4" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-expanded="false">Componentes</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">componente 1</a></li>
+                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">componente 2</a></li>
+                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">componente 3</a></li>
+                </ul>
+            </li>
+            <li class="nav-item w-100">
+                <a href="page_2.html" class="nav-link text-light pl-4">plantillas</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="p-4 my-container">
+        <button class="btn my-4" id="btn-menu">
+            Abrir menu / cerrar menu
+        </button>
+        <h1>
+            Componentes
+        </h1>
+
+        <p class="text-dark">
+            Los componentes son el componente principal de las aplicaciones de Angular. Cada componente consta de: <br>
+            Una plantilla HTML que declara lo que se representa en la página <br>
+            Una clase de TypeScript que define el comportamiento. <br>
+            Un selector de CSS que define cómo se usa el componente en una plantilla <br>
+            Opcionalmente, estilos CSS aplicados a la plantilla. <br>
+            Este tema describe cómo crear y configurar un componente Angular.
+        </p>
+
+        <h2>
+            requisitos previos
+        </h2>
+        <p class="text-dark">
+            Para crear un componente, verifique que haya cumplido con los siguientes requisitos previos: <br>
+
+            Instale la CLI angular. <br>
+            Cree un espacio de trabajo angular con aplicación inicial. Si no tiene un proyecto, cree uno usando ng new
+            (project-name), donde (project-name) es el nombre de su aplicación Angular.
+        </p>
+        <h2>
+            Creando un componente
+        </h2>
+        <p class="text-dark">
+            La mejor manera de crear un componente es con Angular CLI. También puede crear un componente manualmente.
+        </p>
+        <h2>Creación de un componente usando la CLI de Angular</h2>
+        <p>Para crear un componente usando la CLI de Angular: <br>
+
+            Desde una ventana de terminal, navegue hasta el directorio que contiene su aplicación.
+            Ejecute el comando ng generar componente (nombre-componente), donde (nombre-componente) es el nombre de su
+            nuevo componente. <br>
+            <br>
+            De forma predeterminada, este comando crea lo siguiente: <br>
+            Una carpeta con el nombre del componente
+            Un archivo de componente, (nombre-componente).component.ts <br>
+            Un archivo de plantilla, (nombre-componente).component.html <br>
+            Un archivo CSS, (nombre-componente).component.css <br>
+            Un archivo de especificación de prueba, (nombre-componente).component.spec.ts <br>
+            Donde (component-name) es el nombre de su componente. 
+        </p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="./sidebar.js"></script>
+</body>
+
+</html>

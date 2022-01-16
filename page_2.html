@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Tecnical Documentation</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand d-falx flex-column align-item-start" id="sidebar">
+
+        <a class="navbar-brand text-light mt-5" href="#">
+            <div class="display-5 font-weight-bold">
+                Angular
+            </div>
+        </a>
+        <ul class="navbar-nav d-flex flex-column mt-5 w-100">
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light pl-4">Acerca</a>
+            </li>
+            <li class="nav-item dropdown w-100">
+                <a href="page_1.html" class="nav-link dropdown-toggle text-light pl-4" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-expanded="false">Componentes</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">componente 1</a></li>
+                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">componente 2</a></li>
+                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">componente 3</a></li>
+                </ul>
+            </li>
+            <li class="nav-item w-100">
+                <a href="page_2.html" class="nav-link text-light pl-4">plantillas</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="p-4 my-container">
+        <button class="btn my-4" id="btn-menu">
+            Abrir menu / cerrar menu
+        </button>
+        <h1>
+            Sintaxis de plantilla
+        </h1>
+        <p class="text-dark">
+            En Angular, una plantilla es un fragmento de HTML. Use una sintaxis especial dentro de una plantilla para
+            desarrollar muchas de las características de Angular.
+        </p>
+        <h2>requisitos previos</h2>
+        <p class="text-dark">
+            Antes de aprender la sintaxis de la plantilla, debe estar familiarizado con lo siguiente: <br>
+            conceptos angulares <br>
+            JavaScript <br>
+            HTML <br>
+            CSS <br>
+        </p>
+        <br>
+        <p>
+            Cada plantilla de Angular en su aplicación es una sección de HTML para incluir como parte de la página que
+            muestra el navegador. Una plantilla HTML angular representa una vista, o interfaz de usuario, en el
+            navegador, al igual que el HTML normal, pero con mucha más funcionalidad. <br> <br>
+
+            Cuando genera una aplicación Angular con Angular CLI, el archivo app.component.html es la plantilla
+            predeterminada que contiene HTML de marcador de posición. <br> <br>
+
+            Las guías de sintaxis de la plantilla le muestran cómo controlar la UX/UI mediante la coordinación de datos
+            entre la clase y la plantilla.
+        </p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="./sidebar.js"></script>
+</body>
+
+</html>
